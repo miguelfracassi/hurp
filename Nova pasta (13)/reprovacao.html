@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Que dó! Foi reprovado</title>
+<style>
+  :root {
+    --red: #d61f26;
+    --red-dark: #a3181c;
+    --ink: #f2f2f2;
+    --ink-soft: rgba(242,242,242,0.75);
+    --rule: rgba(242,242,242,0.2);
+    --white: #ffffff;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--red);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 80px;
+  }
+
+  header {
+    width: 100%;
+    max-width: 640px;
+    padding: 56px 0 8px;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--ink);
+    background: rgba(0,0,0,0.15);
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+
+  .eyebrow svg { width: 14px; height: 14px; }
+
+  h1 {
+    font-size: 1.65rem;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+  }
+
+  header p {
+    font-size: 1.02rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 48ch;
+    margin: 0;
+  }
+
+  main {
+    width: 100%;
+    max-width: 640px;
+    margin-top: 32px;
+  }
+
+  .warning-card {
+    background: rgba(0,0,0,0.18);
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 20px;
+    padding: 28px 24px;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .warning-card span.label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+    letter-spacing: 0.02em;
+  }
+
+  .warning-card h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--white);
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+
+  .warning-card p {
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  .step {
+    display: flex;
+    gap: 18px;
+    padding: 26px 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .step:first-child { border-top: none; padding-top: 4px; }
+
+  .step-num {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.2);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .step-body h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 4px 0 8px;
+  }
+
+  .step-body p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin: 0 0 10px;
+  }
+
+  .step-body p:last-child { margin-bottom: 0; }
+  .step-body strong { color: var(--white); }
+
+  .notice {
+    margin-top: 8px;
+    padding: 20px 22px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.18);
+    border-radius: 14px;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+
+  .notice strong { color: var(--white); }
+
+  footer {
+    width: 100%;
+    max-width: 640px;
+    padding-top: 32px;
+    margin-top: 36px;
+    border-top: 1px solid var(--rule);
+  }
+
+  footer p {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    header { padding-top: 36px; }
+    h1 { font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <span class="eyebrow">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+      Central de Ajuda
+    </span>
+    <h1>Fui reprovado? E agora?</h1>
+    <p>
+      Sua solicitação não foi aprovada desta vez. Veja abaixo o que fazer a partir
+      de agora.
+    </p>
+  </header>
+
+  <main>
+
+    <div class="warning-card">
+      <span class="label">ATENÇÃO</span>
+      <h2>NÃO TENTE NOVAMENTE</h2>
+      <p>Não abra uma nova solicitação antes da próxima remessa.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h3>Não envie uma nova solicitação agora</h3>
+        <p>
+          Tentar novamente fora do prazo não vai adiantar. As análises seguem uma
+          ordem, e enviar de novo antes da hora não muda o resultado.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h3>Espere a próxima remessa</h3>
+        <p>
+          A única forma de tentar novamente é aguardando a <strong>próxima remessa</strong>
+          de solicitações. Fique de olho nos avisos no Discord para saber quando ela abrir.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h3>Verifique as informações antes de enviar</h3>
+        <p>
+          Antes de enviar a próxima solicitação, revise com calma todas as
+          informações preenchidas. Muitas reprovações acontecem por dados
+          incompletos ou incorretos.
+        </p>
+      </div>
+    </div>
+
+    <div class="notice">
+      <strong>Resumindo:</strong> não tente novamente agora. Espere a próxima
+      remessa abrir e, quando for enviar, confira tudo antes de submeter.
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Digital Wow. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
