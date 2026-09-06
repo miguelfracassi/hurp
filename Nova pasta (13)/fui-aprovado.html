@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Central de Ajuda — Digital Wow</title>
+<style>
+  :root {
+    --blue: #1b17ff;
+    --ink: #14122e;
+    --ink-soft: #5a5876;
+    --paper: #f2f2f2;
+    --white: #ffffff;
+    --rule: #e2e2ea;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 80px;
+  }
+
+  header {
+    width: 100%;
+    max-width: 640px;
+    padding: 56px 0 8px;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--blue);
+    background: rgba(27,23,255,0.08);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+  }
+
+  header p {
+    font-size: 1.02rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 48ch;
+    margin: 0;
+  }
+
+  main {
+    width: 100%;
+    max-width: 640px;
+    margin-top: 32px;
+  }
+
+  .step {
+    display: flex;
+    gap: 18px;
+    padding: 26px 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .step:first-child { border-top: none; padding-top: 4px; }
+
+  .step-num {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--blue);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .step-body h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 4px 0 8px;
+  }
+
+  .step-body p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin: 0 0 10px;
+  }
+
+  .step-body p:last-child { margin-bottom: 0; }
+
+  .step-body strong { color: var(--ink); }
+
+  .ticket-card {
+    margin-top: 6px;
+    background: var(--blue);
+    border-radius: 20px;
+    padding: 30px 24px;
+    text-align: center;
+  }
+
+  .ticket-card p.label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(242,242,242,0.7);
+    margin: 0 0 8px;
+  }
+
+  .ticket-card h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--paper);
+    margin: 0 0 10px;
+  }
+
+  .ticket-card p.desc {
+    font-size: 0.92rem;
+    color: rgba(242,242,242,0.75);
+    margin: 0 0 24px;
+    max-width: 40ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 15px 22px;
+    border-radius: 12px;
+    background: var(--paper);
+    color: var(--blue);
+    -webkit-tap-highlight-color: transparent;
+    transition: opacity 0.15s ease;
+  }
+
+  .btn:active { opacity: 0.75; }
+  .btn svg { width: 16px; height: 16px; }
+
+  .notice {
+    margin-top: 32px;
+    padding: 18px 20px;
+    border: 1px solid var(--rule);
+    background: var(--white);
+    border-radius: 14px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  .notice strong { color: var(--ink); }
+
+  footer {
+    width: 100%;
+    max-width: 640px;
+    padding-top: 32px;
+    margin-top: 36px;
+    border-top: 1px solid var(--rule);
+  }
+
+  footer p {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    header { padding-top: 36px; }
+    h1 { font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <span class="eyebrow">Central de Ajuda</span>
+    <h1>Fui aprovado? E agora?</h1>
+    <p>
+      Parabéns por ter sido aprovado! Veja o próximo passo para dar continuidade ao
+      seu processo.
+    </p>
+  </header>
+
+  <main>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h3>Abra um ticket no canal de atendimento</h3>
+        <p>
+          O próximo passo é abrir um ticket no nosso canal de atendimento dentro do
+          Discord. É por lá que a equipe vai te orientar sobre a continuação do
+          processo.
+        </p>
+      </div>
+    </div>
+
+    <div class="ticket-card">
+      <p class="label">CANAL DE ATENDIMENTO</p>
+      <h2>Abra seu ticket</h2>
+      <p class="desc">Toque no botão abaixo para acessar o canal e abrir seu ticket.</p>
+      <a class="btn" href="https://discord.com/channels/1545235289029615768/1545987939387969546" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Abrir canal de atendimento
+      </a>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h3>Aguarde o retorno da equipe</h3>
+        <p>
+          Depois de abrir o ticket, aguarde. Um membro da equipe vai te atender e
+          passar as próximas instruções do processo.
+        </p>
+      </div>
+    </div>
+
+    <div class="notice">
+      <strong>Importante:</strong> o link do canal de atendimento só funciona para
+      quem já é membro do nosso servidor do Discord.
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Digital Wow. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
