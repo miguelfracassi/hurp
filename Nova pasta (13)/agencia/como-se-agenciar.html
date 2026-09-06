@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Como ser agenciado — Digital Wow</title>
+<link rel="icon" type="image/png" href="logotipo-azul.png">
+<style>
+  :root {
+    --blue: #1b17ff;
+    --ink: #14122e;
+    --ink-soft: #5a5876;
+    --paper: #f2f2f2;
+    --white: #ffffff;
+    --rule: #e2e2ea;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 80px;
+  }
+
+  header {
+    width: 100%;
+    max-width: 640px;
+    padding: 56px 0 8px;
+  }
+
+  .brandmark {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 36px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+  }
+
+  header p {
+    font-size: 1.02rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 48ch;
+    margin: 0 0 8px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 640px;
+    margin-top: 32px;
+  }
+
+  .step {
+    display: flex;
+    gap: 18px;
+    padding: 26px 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .step:first-child { border-top: none; padding-top: 4px; }
+
+  .step-num {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--blue);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .step-body h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 4px 0 8px;
+  }
+
+  .step-body p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin: 0 0 10px;
+  }
+
+  .step-body p:last-child { margin-bottom: 0; }
+
+  .tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--blue);
+    background: rgba(27,23,255,0.08);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+
+  .discord-card {
+    margin-top: 8px;
+    background: var(--blue);
+    border-radius: 20px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .discord-card p {
+    color: rgba(242,242,242,0.85);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 22px;
+    max-width: 40ch;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 16px 22px;
+    border-radius: 12px;
+    background: var(--paper);
+    color: var(--blue);
+    -webkit-tap-highlight-color: transparent;
+    transition: opacity 0.15s ease;
+  }
+
+  .btn:active { opacity: 0.75; }
+
+  .btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+  .notice {
+    margin-top: 28px;
+    padding: 18px 20px;
+    border: 1px solid var(--rule);
+    background: var(--white);
+    border-radius: 14px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  .notice strong { color: var(--ink); }
+
+  footer {
+    width: 100%;
+    max-width: 640px;
+    padding-top: 32px;
+    margin-top: 12px;
+    border-top: 1px solid var(--rule);
+  }
+
+  footer p {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    header { padding-top: 36px; }
+    h1 { font-size: 1.55rem; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <img class="brandmark" src="digitalwow.png" alt="Digital Wow">
+    <h1>Como ser agenciado</h1>
+    <p>
+      Quer fazer parte do time de talentos agenciados pela Digital Wow? O processo começa
+      no nosso servidor do Discord, onde avisamos quando novas vagas abrem.
+    </p>
+  </header>
+
+  <main>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <span class="tag">Obrigatório</span>
+        <h2>Entre no nosso servidor do Discord</h2>
+        <p>
+          Esse é o único canal oficial usado para divulgar as vagas de agenciamento.
+          Quem não estiver no servidor não recebe o aviso e não consegue se candidatar.
+        </p>
+        <div class="discord-card">
+          <p>Toque no botão abaixo para entrar no servidor agora.</p>
+          <a class="btn" href="https://discord.gg/JGNvwZmnrH" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.073.073 0 0 1 .078.01c.12.099.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.076.076 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.029 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.055c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.096 2.157 2.42 0 1.333-.955 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            Entrar no Discord
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h2>Espere as vagas abrirem</h2>
+        <p>
+          As vagas de agenciamento não ficam abertas o tempo todo. Assim que surgir uma
+          nova oportunidade, o anúncio é feito diretamente no servidor do Discord, com
+          as instruções de como se candidatar.
+        </p>
+        <p>
+          Fique de olho nas notificações e nos canais de avisos para não perder o
+          período de inscrição.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h2>Candidate-se dentro do prazo</h2>
+        <p>
+          Quando a vaga abrir, siga exatamente as instruções publicadas no servidor.
+          Candidaturas fora do Discord ou fora do período informado não são
+          consideradas.
+        </p>
+      </div>
+    </div>
+
+    <div class="notice">
+      <strong>Importante:</strong> entrar no servidor do Discord é obrigatório e é o único
+      meio oficial de acompanhar as vagas de agenciamento da Digital Wow.
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Digital Wow. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

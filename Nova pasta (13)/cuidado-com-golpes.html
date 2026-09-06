@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuidado com Golpes</title>
+<link rel="icon" type="image/png" href="logotipo-azul.png">
+<style>
+  :root {
+    --blue: #1b17ff;
+    --ink: #14122e;
+    --ink-soft: #5a5876;
+    --paper: #f2f2f2;
+    --white: #ffffff;
+    --rule: #e2e2ea;
+    --alert: #e6432e;
+    --alert-bg: #fdecea;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 80px;
+  }
+
+  header {
+    width: 100%;
+    max-width: 640px;
+    padding: 56px 0 8px;
+  }
+
+  .brandmark {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 36px;
+  }
+
+  .alert-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--alert);
+    background: var(--alert-bg);
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+
+  .alert-badge svg { width: 14px; height: 14px; }
+
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+  }
+
+  header p {
+    font-size: 1.02rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 48ch;
+    margin: 0;
+  }
+
+  main {
+    width: 100%;
+    max-width: 640px;
+    margin-top: 32px;
+  }
+
+  .official-card {
+    background: var(--blue);
+    border-radius: 20px;
+    padding: 30px 24px;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .official-card span.label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(242,242,242,0.7);
+    margin-bottom: 10px;
+  }
+
+  .official-card h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--paper);
+    margin: 0 0 6px;
+  }
+
+  .official-card p {
+    font-size: 0.9rem;
+    color: rgba(242,242,242,0.75);
+    margin: 0;
+  }
+
+  section { margin-bottom: 36px; }
+
+  section h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 16px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 16px 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  li:first-child { border-top: none; padding-top: 4px; }
+
+  .li-icon {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--alert-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  .li-icon svg {
+    width: 15px;
+    height: 15px;
+    stroke: var(--alert);
+  }
+
+  li p {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  li strong { color: var(--ink); }
+
+  .notice {
+    padding: 20px 22px;
+    border: 1px solid var(--rule);
+    background: var(--white);
+    border-radius: 14px;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+
+  .notice strong { color: var(--ink); }
+
+  footer {
+    width: 100%;
+    max-width: 640px;
+    padding-top: 32px;
+    margin-top: 12px;
+    border-top: 1px solid var(--rule);
+  }
+
+  footer p {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    header { padding-top: 36px; }
+    h1 { font-size: 1.55rem; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <span class="alert-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
+      Alerta de segurança
+    </span>
+    <h1>Cuidado com golpes</h1>
+    <p>
+      Já recebemos relatos de pessoas se passando pela Digital Wow para aplicar golpes.
+      Fique atento e proteja seus dados e seu dinheiro.
+    </p>
+  </header>
+
+  <main>
+
+    <div class="official-card">
+      <span class="label">NOSSO ÚNICO CANAL OFICIAL</span>
+      <h2>Discord</h2>
+      <p>Toda comunicação oficial da Digital Wow acontece exclusivamente no nosso servidor do Discord.</p>
+    </div>
+
+    <section>
+      <h2>Fique atento a estes sinais</h2>
+      <ul>
+        <li>
+          <div class="li-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </div>
+          <p><strong>Perfis fora do Discord.</strong> Não temos atendimento oficial por WhatsApp, Instagram, Telegram ou e-mail pessoal se passando por representante da agência.</p>
+        </li>
+        <li>
+          <div class="li-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </div>
+          <p><strong>Pedidos de pagamento antecipado.</strong> Nunca pedimos pagamento, taxa de inscrição ou "reserva de vaga" para participar do processo de agenciamento.</p>
+        </li>
+        <li>
+          <div class="li-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </div>
+          <p><strong>Pressa e urgência exagerada.</strong> Golpistas costumam criar senso de urgência para você agir sem pensar. Desconfie de prazos "de última hora".</p>
+        </li>
+        <li>
+          <div class="li-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </div>
+          <p><strong>Pedidos de dados sensíveis.</strong> Nunca pedimos senha, código de verificação ou dados bancários completos por mensagem direta.</p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="notice">
+      <strong>Na dúvida, confirme sempre pelo Discord oficial.</strong> Se alguém entrar em
+      contato dizendo ser da Digital Wow por qualquer outro canal, não responda, não envie
+      dados e não faça pagamentos. Fale com a equipe pelo servidor oficial para confirmar
+      antes de qualquer coisa.
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Digital Wow. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

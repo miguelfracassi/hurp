@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Área do Agenciado</title>
+<link rel="icon" type="image/png" href="logotipo-azul.png">
+<style>
+  :root {
+    --blue: #1b17ff;
+    --ink: #f2f2f2;
+    --ink-soft: rgba(242,242,242,0.72);
+    --rule: rgba(242,242,242,0.18);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: var(--blue);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .brandmark {
+    width: 140px;
+    height: auto;
+    margin-bottom: 56px;
+  }
+
+  .badge {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .badge svg {
+    width: 30px;
+    height: 30px;
+    stroke: var(--ink);
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 12px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 38ch;
+    margin: 0 0 40px;
+  }
+
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    border-top: 1px solid var(--rule);
+    padding-top: 24px;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffb020;
+  }
+
+  @media (max-width: 600px) {
+    .brandmark { width: 120px; margin-bottom: 44px; }
+    h1 { font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+
+
+  <div class="badge">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 8v4l3 2"/>
+      <circle cx="12" cy="12" r="9"/>
+    </svg>
+  </div>
+
+  <h1>Área do agenciado</h1>
+  <p>Estamos preparando essa área com carinho. Em breve você terá acesso a tudo por aqui.</p>
+
+  <div class="status">
+    <span class="dot"></span>
+    Em desenvolvimento
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Wow — Agência de Marketing Digital</title>
+<link rel="icon" type="image/png" href="logotipo-azul.png">
+<style>
+  :root {
+    --blue: #1b17ff;
+    --ink: #14122e;
+    --ink-soft: #5a5876;
+    --paper: #f2f2f2;
+    --white: #ffffff;
+    --rule: #e2e2ea;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  a { color: inherit; }
+
+  /* ---------- NAV ---------- */
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 22px 20px;
+  }
+
+  .nav-inner {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-inner img { width: 110px; height: auto; }
+
+  .nav-inner a.cta {
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--blue);
+    padding: 10px 18px;
+    border-radius: 10px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    width: 100%;
+    background: var(--blue);
+    display: flex;
+    justify-content: center;
+    padding: 64px 20px 80px;
+  }
+
+  .hero-inner {
+    width: 100%;
+    max-width: 640px;
+    text-align: left;
+  }
+
+  .hero-inner img { width: 170px; height: auto; margin-bottom: 40px; }
+
+  .hero h1 {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--paper);
+    margin: 0 0 18px;
+  }
+
+  .hero p {
+    font-size: 1.08rem;
+    line-height: 1.65;
+    color: rgba(242,242,242,0.78);
+    max-width: 46ch;
+    margin: 0 0 32px;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 14px 22px;
+    border-radius: 12px;
+    -webkit-tap-highlight-color: transparent;
+    transition: opacity 0.15s ease;
+  }
+
+  .btn:active { opacity: 0.75; }
+
+  .btn.primary { background: var(--paper); color: var(--blue); }
+  .btn.ghost {
+    background: transparent;
+    color: var(--paper);
+    border: 1px solid rgba(242,242,242,0.35);
+  }
+
+  .btn svg { width: 16px; height: 16px; }
+
+  /* ---------- MAIN ---------- */
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .main-inner {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  section { padding: 56px 0; border-top: 1px solid var(--rule); }
+  section:first-child { border-top: none; }
+
+  .eyebrow-free h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+  }
+
+  section > p.lead {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 48ch;
+    margin: 0 0 32px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .service {
+    display: flex;
+    gap: 16px;
+    padding: 20px 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .service:first-child { border-top: none; padding-top: 0; }
+
+  .service-icon {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(27,23,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-icon svg { width: 18px; height: 18px; stroke: var(--blue); }
+
+  .service h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 4px 0 6px;
+  }
+
+  .service p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  /* links grid */
+  .links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .link-card {
+    text-decoration: none;
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .link-card span.title {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .link-card span.desc {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  /* discord banner */
+  .discord-banner {
+    background: var(--blue);
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .discord-banner p.label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(242,242,242,0.7);
+    margin: 0 0 8px;
+  }
+
+  .discord-banner h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--paper);
+    margin: 0 0 10px;
+  }
+
+  .discord-banner p.desc {
+    font-size: 0.92rem;
+    color: rgba(242,242,242,0.75);
+    margin: 0 0 24px;
+    max-width: 40ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 56px;
+  }
+
+  .footer-inner {
+    width: 100%;
+    max-width: 640px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .footer-inner p {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    .hero { padding: 48px 20px 64px; }
+    .hero-inner img { width: 140px; margin-bottom: 32px; }
+    .hero h1 { font-size: 1.75rem; }
+    .links-grid { grid-template-columns: 1fr; }
+    .nav-inner img { width: 92px; }
+  }
+</style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <img src="logotipo-azul.png" alt="Digital Wow">
+      <a class="cta" href="https://discord.gg/JGNvwZmnrH" target="_blank" rel="noopener">Entrar no Discord</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <img src="logotipo-escrito.png" alt="Digital Wow">
+      <h1>Marketing digital que faz sua marca crescer de verdade.</h1>
+      <p>
+        A Digital Wow é uma agência de marketing digital especializada em estratégia,
+        conteúdo, performance e branding para marcas que querem se destacar no digital.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="https://discord.gg/JGNvwZmnrH" target="_blank" rel="noopener">
+          Entrar no Discord
+        </a>
+        <a class="btn ghost" href="como-ser-agenciado.html">Como ser agenciado</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="main-inner">
+
+      <section class="eyebrow-free">
+        <h2>O que fazemos</h2>
+        <p class="lead">
+          Cuidamos de cada etapa da presença digital da sua marca, do planejamento à
+          execução.
+        </p>
+        <div class="services">
+
+          <div class="service">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <div>
+              <h3>Gestão de redes sociais</h3>
+              <p>Planejamento e produção de conteúdo para manter sua marca presente e relevante todos os dias.</p>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <div>
+              <h3>Tráfego pago e performance</h3>
+              <p>Campanhas otimizadas para gerar resultado real, com acompanhamento constante de métricas.</p>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+            </div>
+            <div>
+              <h3>Branding e identidade visual</h3>
+              <p>Construção de marcas com personalidade própria, do zero ou em reposicionamento.</p>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div>
+              <h3>Sites e landing pages</h3>
+              <p>Páginas rápidas e bem construídas, pensadas para converter visitantes em clientes.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="eyebrow-free">
+        <h2>Saiba mais</h2>
+        <p class="lead">Acesse as demais páginas oficiais da Digital Wow.</p>
+        <div class="links-grid">
+          <a class="link-card" href="identidade-visual.html">
+            <span class="title">Identidade visual</span>
+            <span class="desc">Baixe as versões oficiais do nosso logotipo.</span>
+          </a>
+          <a class="link-card" href="como-ser-agenciado.html">
+            <span class="title">Como ser agenciado</span>
+            <span class="desc">Veja o processo para fazer parte do time.</span>
+          </a>
+          <a class="link-card" href="cuidado-com-golpes.html">
+            <span class="title">Cuidado com golpes</span>
+            <span class="desc">Saiba como identificar contatos falsos.</span>
+          </a>
+          <a class="link-card" href="termos.html">
+            <span class="title">Termos de uso</span>
+            <span class="desc">Condições de uso dos nossos serviços.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="eyebrow-free">
+        <div class="discord-banner">
+          <p class="label">CANAL OFICIAL</p>
+          <h3>Fale com a gente no Discord</h3>
+          <p class="desc">Todas as novidades, vagas e avisos oficiais são publicados por lá.</p>
+          <a class="btn primary" href="https://discord.gg/JGNvwZmnrH" target="_blank" rel="noopener">Entrar no Discord</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 Digital Wow. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
